@@ -13,3 +13,6 @@ body{
 .titer{
     font-family: "titer",sans-serif;
 }
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family:"sans" ;
+    src: url("./assets/font/Sans.ttf");
+}
+@font-face {
+    font-family:"titer" ;
+    src: url("./assets/font/2\ TITRBD.TTF");
+}
+body{
+    background: #ECF0F3;
+    font-family: "sans",sans-serif;
+}
+.titer{
+    font-family: "titer",sans-serif;
+}

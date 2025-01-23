@@ -1,34 +1,13 @@
-.conImage img {
-  border-radius: 1.875rem;
-  border: 2px solid #65bb6f;
+.conImage{
+  width: 307px;
+  top: -53px;
+left: 7px;
+  position: relative;
 }
-.intro{
-  width: 190px;
-  
-  margin-inline: 12px;
-  opacity: 1;
- 
-}
-.intro p {
-  line-height: 3rem;
-  background: #85a88d;
-  height: 3rem;
-  border-radius: 0.3125rem;
-  padding-inline: 4px;
-  
-}
-.width-image{
-  width: 190px;
-}
-.tex1,.tex2,.tex3{
-
-  transform: translateY(-23px);
-  opacity: 0;
-  
-}
-
-@media screen and (max-width:556px) {
-  .tex3{
-    font-size: 15px;
-  }
+.boxshadow{
+  width: 295px;
+  height: 418px;
+border-radius: 9px;
+margin: 34px auto;
+box-shadow: rgb(157, 157, 157) 0px 0px 30px -5px;
 }

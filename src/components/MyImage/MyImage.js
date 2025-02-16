@@ -1,13 +1,26 @@
 import { Col, Container, Row } from "react-bootstrap";
-import imageMe from "../../assets/image/pic.png";
+import ffc from "../../assets/image/pic-min.png"
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+
 import "./MyImage.css";
 import Typewriter from "typewriter-effect";
-gsap.registerPlugin(useGSAP);
+import { useEffect, useState } from "react";
+import BioMe from "./bio Header/BioHeader";
+import { useGSAP } from "@gsap/react";
 
 function MyImage() {
+  useGSAP(() => {
+  
+    const timeline = gsap.timeline();
+    timeline.to(".boxshadow", {
+      x: 0,
+      opacity: 1,
+      duration: 1.9,
+    });
+
+  });
+
+
   return (
     <div>
       <Container>
@@ -19,36 +32,35 @@ function MyImage() {
                 ابوالفضل هستم
               </span>
             </h2>
-            <h5 className="d-flex">
-             یک
-              <div style={{ color: "#ff014f", fontWeight: "bolder" }}>
+            <h5 className="d-flex ">
+              <span style={{ color: "#ff014f" }} className="text-bold">
+                یک
+              </span>
+              <div style={{ color: "#000", fontWeight: "bolder" }}>
                 <Typewriter
                   options={{
                     strings: [
-                      "برنامه نویس حرفه ای"
-                      
-                     
-                      , "UX,UI  دیزانر حرفه ای "
-
+                      "توسعه دهنده فرانت اند"
                       ,
-                      "توسعه دهنده وب"
+                      ""
                     ],
                     autoStart: true,
-                    loop: true,
+                 stringSplitter:Row,
                     delay: 20,
+                    loop:true,
                     deleteSpeed: 50,
                   }}
                 />
               </div>
             </h5>
+            <BioMe />
           </Col>
           <Col className="">
-          <div className="boxshadow">
-
-            <div className="conImage m-auto">
-              <img className="img-fluid MyImage" src={imageMe} alt="" />
+            <div className="boxshadow">
+              <div className="conImage m-auto">
+                <img className="img-fluid MyImage" src={ffc} alt="" />
+              </div>
             </div>
-          </div>
           </Col>
         </Row>
       </Container>

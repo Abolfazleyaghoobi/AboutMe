@@ -1,13 +1,20 @@
 .conImage{
   width: 307px;
-  top: -53px;
+  top: -113px;
 left: 7px;
   position: relative;
+
+transform: translateY(60px);
+
 }
 .boxshadow{
   width: 295px;
+background: #e0e0e0;
   height: 418px;
 border-radius: 9px;
 margin: 34px auto;
 box-shadow: rgb(157, 157, 157) 0px 0px 30px -5px;
+transform: translateX(-90px);
+opacity: 0;
 }
+

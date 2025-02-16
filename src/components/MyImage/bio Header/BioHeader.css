@@ -1,0 +1,29 @@
+.linkedin{
+    transition: all .2s; 
+    background: #fbfcfd;
+    width: fit-content;
+    padding: 5px;
+    box-shadow: inset 5px 5px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 9px;
+    border-right: 1px solid rgb(147, 147, 147);
+    border-bottom: 1px solid rgb(147, 147, 147);
+}
+.linkedin:hover{
+transform: scale(1.2);
+box-shadow: inset 5px 5px 10px #ffffff,rgb(24, 24, 24) -10px 10px 30px  -5px;
+
+}
+.react,.html,.js{
+    transition: all .3s; 
+    background: black;
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    border-radius: 6px;
+    border-right: 1px solid rgb(147, 147, 147);
+    border-bottom: 1px solid rgb(147, 147, 147);
+}
+.react a img ,.html a img,.js a img{
+    width: 30px;
+}
+

@@ -22,7 +22,7 @@
   display: flex;
   transition: all 0.3s;
   background: #fbfcfd;
- box-shadow: inset 6px -4px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px;
+ /* box-shadow: inset 6px -4px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px; */
   width: fit-content;
   padding: 5px;
   color: rgb(0, 0, 0);

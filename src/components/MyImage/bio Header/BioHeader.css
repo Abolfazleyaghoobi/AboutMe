@@ -1,29 +1,101 @@
-.linkedin{
-    transition: all .2s; 
-    background: #fbfcfd;
-    width: fit-content;
-    padding: 5px;
-    box-shadow: inset 5px 5px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 9px;
-    border-right: 1px solid rgb(147, 147, 147);
-    border-bottom: 1px solid rgb(147, 147, 147);
+.sial-media {
+  width: 25%;
 }
-.linkedin:hover{
-transform: scale(1.2);
-box-shadow: inset 5px 5px 10px #ffffff,rgb(24, 24, 24) -10px 10px 30px  -5px;
+.linkedin {
+  transition: all 0.2s;
+  background: #fbfcfd;
+  width: fit-content;
+  padding: 5px;
+  box-shadow: inset 5px 5px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 9px;
+  border-right: 1px solid rgb(147, 147, 147);
+  border-bottom: 1px solid rgb(147, 147, 147);
+}
+.linkedin:hover {
+  transform: scale(1.2);
+  box-shadow: inset 5px 5px 10px #ffffff, rgb(24, 24, 24) -10px 10px 30px -5px;
+}
+.react,
+.html,
+.js {
+  position: relative;
+  display: flex;
+  transition: all 0.3s;
+  background: #fbfcfd;
+ box-shadow: inset 6px -4px 10px #8c8c8c, rgb(38, 57, 77) 0px 20px 30px -10px;
+  width: fit-content;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  border-right: 1px solid rgb(147, 147, 147);
+  border-bottom: 1px solid rgb(147, 147, 147);
+}
+.react p,
+.html p,
+.js p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.react a img,
+.html a img,
+.js a img {
+  width: 30px;
+}
 
+.more {
+  margin-top: 44px;
+  background: #000;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  width: 43px;
+  height: 43px;
 }
-.react,.html,.js{
-    transition: all .3s; 
-    background: black;
-    width: fit-content;
-    padding: 5px;
-    color: white;
-    border-radius: 6px;
-    border-right: 1px solid rgb(147, 147, 147);
-    border-bottom: 1px solid rgb(147, 147, 147);
+.more > a {
+  font-size: 44px;
+  padding-bottom: 14px;
+  color: wheat;
 }
-.react a img ,.html a img,.js a img{
-    width: 30px;
-}
+.react::after,
+.html::after,
+.js::after {
+  content: "";
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(to left,
+  #fea100 ,
+  #ffe600 ,
+  #db3a2b ,
+  #ff1003 ,
+  #0325ff ,
+  #fff201 ,
+  #33a443 ,
+  #13b8ff 
 
+   );
+   background-size: 200%,200% ;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  right: 0; 
+  transform: scale(0.9);
+  filter: blur(15px);
+  animation: ali linear 10s infinite;
+}
+@keyframes ali {
+  0%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 200% 500%;
+  }
+}
+@media screen and (max-width:1199px) {
+  .skill{
+    padding-top: 22px;
+  }
+}

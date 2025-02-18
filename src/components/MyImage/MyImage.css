@@ -1,20 +1,36 @@
-.conImage{
+.conImage {
   width: 307px;
-  top: -113px;
-left: 7px;
+  top: -52px;
+  left: -5px;
+  position: absolute;
+  /* transform: translateY(60px); */
+}
+.contai {
   position: relative;
-
-transform: translateY(60px);
-
+  height: 545px;
+  overflow: hidden;
 }
-.boxshadow{
+.boxshadow {
+  top: 15px;
+  left: -400px;
   width: 295px;
-background: #e0e0e0;
+  position: relative;
+  background: #e0e0e0;
   height: 418px;
-border-radius: 9px;
-margin: 34px auto;
-box-shadow: rgb(157, 157, 157) 0px 0px 30px -5px;
-transform: translateX(-90px);
-opacity: 0;
-}
+  border-radius: 9px;
+  margin: 34px auto;
+  box-shadow: rgb(157, 157, 157) 0px 0px 30px -5px;
+  visibility: hidden;
 
+  opacity: 0;
+}
+@media screen and (max-width: 767px) {
+  .boxshadow {
+    margin-top: 55px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gridee {
+    flex-direction: row-reverse;
+  }
+}

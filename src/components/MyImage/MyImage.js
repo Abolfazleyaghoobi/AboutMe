@@ -15,6 +15,7 @@ function MyImage() {
       opacity: 1,
       duration: 1.9,
       visibility: "visible",
+      ease: "back.inOut(1.7)",
     });
   });
 
